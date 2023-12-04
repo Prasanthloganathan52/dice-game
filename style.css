@@ -1,0 +1,142 @@
+:root {
+  --green-color: #04C52E;
+  --darkGreen-color: #049824;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif ;
+  position: relative;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.topbar {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: var(--darkGreen-color);
+}
+
+
+.player-status {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.player-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  align-items: center;
+}
+
+
+
+.player-roll-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.play-btn {
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  background-color:var(--darkGreen-color);
+  cursor: pointer;
+}
+
+
+
+
+.reset {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.reset-btn {
+  width: 100px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #FF9090;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+/* dice */
+
+.dice {
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--green-color);
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* Disable roll button for inactive player */
+button[disabled] {
+  background-color: #ccc !important;
+  cursor: not-allowed;
+}
+
+.dot-1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot-2 {
+  top: 10%;
+  left: 10%;
+}
+
+.dot-3 {
+  top: 70%;
+  left: 70%;
+}
+
+.dot-4 {
+  top: 70%;
+  left: 10%;
+}
+
+.dot-5 {
+  top: 10%;
+  left: 70%;
+}
+
+.dot-6 {
+  top: 10%;
+  left: 40%;
+}
+
+.dot-7 {
+  top: 70%;
+  left: 40%;
+}
+
+
+
